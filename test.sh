@@ -4,7 +4,7 @@
 
 # Everything below will go to the file 'log':
 
-target_file="exercises.c"
+target_file="list.c"
 testcode="test.c"
 
 #Verifca si se realizaron cambios 
