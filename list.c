@@ -29,49 +29,26 @@ Node * createNode(const void * data) {
 }
 
 List * createList() {
-     List * new = (List *)malloc(sizeof(List));
-     assert(new != NULL);
-     new->head = new->tail = new->current = NULL;
-     return new;
+     return NULL;
 }
 
 void * firstList(List * list) {
-    if (list == NULL || list->head == NULL) return NULL;
-    list->current = list->head;
-    return (void *)list->current->data;
+    return NULL;
 }
 
 void * nextList(List * list) {
-    if (list == NULL || list->head == NULL || list->current == NULL || list->current->next == NULL) return NULL;
-    list->current = list->current->next;
-    return (void *)list->current->data;
+    return NULL;
 }
 
 void * lastList(List * list) {
-    if (list == NULL || list->head == NULL) return NULL;
-    list->current = list->tail;
-    return (void *)list->current->data;
+    return NULL;
 }
 
 void * prevList(List * list) {
-    if (list == NULL || list->head == NULL || list->current == NULL || list->current->prev == NULL) return NULL;
-    list->current = list->current->prev;
-    return (void *)list->current->data;
+    return NULL;
 }
 
 void pushFront(List * list, const void * data) {
-    assert(list != NULL);
-    
-    Node * new = createNode(data);
-    
-    if (list->head == NULL) {
-        list->tail = new;
-    } else {
-        new->next = list->head;
-        list->head->prev = new;
-    }
-    
-    list->head = new;
 }
 
 void pushBack(List * list, const void * data) {
@@ -80,20 +57,6 @@ void pushBack(List * list, const void * data) {
 }
 
 void pushCurrent(List * list, const void * data) {
-    assert(list != NULL && list->current !=NULL);
-    Node * new = createNode(data);
-
-    if(list->current->next)
-        new->next = list->current->next;
-    new->prev = list->current;
-
-    if(list->current->next)
-        list->current->next->prev = new;
-    list->current->next = new;
-
-    if(list->current==list->tail)
-        list->tail=new;
-
 }
 
 void * popFront(List * list) {
@@ -107,41 +70,10 @@ void * popBack(List * list) {
 }
 
 void * popCurrent(List * list) {
-    assert(list != NULL || list->head != NULL);
-    
-    if (list->current == NULL) return NULL;
-    
-    Node * aux = list->current;
-    
-    if (aux->next != NULL) 
-        aux->next->prev = aux->prev;
-    
-    
-    if (aux->prev != NULL) 
-        aux->prev->next = aux->next;
-    
-    
-    void * data = (void *)aux->data;
-    
-    if(list->current == list->tail)
-        list->tail = list->current->prev;
-
-    if(list->current == list->head)
-        list->head = list->current->next;
-        
-    list->current = aux->prev;
-
-
-
-    
-    free(aux);
-    
-    return data;
+    return NULL;
 }
 
 void cleanList(List * list) {
-    assert(list != NULL);
-    
     while (list->head != NULL) {
         popFront(list);
     }
