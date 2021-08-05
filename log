@@ -37,3 +37,9 @@ ju.,  5 de ago. de 2021 19:20:28:
  tests:  0|6
 total_score: 0/70
 7beab32
+ju.,  5 de ago. de 2021 19:20:54: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+ tests:  1|6
+total_score: 5/70
+cb7489c
