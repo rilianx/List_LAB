@@ -76,7 +76,7 @@ List* initialize_exList(){
 }
 
 List* initialize_emptyList(){
-     info_msg("Creando Lista vacia");
+     info_msg("Creando Lista vacia (head=NULL)");
      List * L = (List *)malloc(sizeof(List));
 
      L->current=NULL;
