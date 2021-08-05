@@ -64,31 +64,13 @@ Ejercicios
 
 Las funciones `pushBack`, `popFront` y `popBack` se pueden implementar usando `popCurrent` y `pushCurrent` (búsquelas en el código).
 
-**Por lo tanto, ya tiene implementado su primer TDA!**
+### Por lo tanto, ya tiene implementado su primer TDA!
 
+----
 
+### Pruebe su implementación
 
-Para probarlo, implemente un programa en el archivo `main.c` que lea nombres desde el archivo `nombres.txt` y los guarde en una lista por orden de ingreso. Después de guardarlos muestre los nombres por pantalla.
-````c
-// Crea una lista y la retorna
-List * createList(void); 
-// Retorna el primer dato de la lista
-void * firstList(List * list);
-// Retorna el siguiente dato 
-void * nextList(List * list); 
-// Inserta el dato al comienzo de la lista.
-void pushFront(List * list, void * data);
-// Inserta el dato al final de la lista. 
-void pushBack(List * list, void * data); 
-````
-
-
-El formato del archivo es el siguiente:
-````
-Elisa Ramirez
-Roberto Vidal
-Mario Sanhueza
-````
+Revise el ejemplo en el archivo `main.c`.
 
 Luego para compilar y ejecutar:
 
