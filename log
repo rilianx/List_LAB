@@ -25,3 +25,9 @@ list.c:25:15: error: assignment discards 'const' qualifier from pointer target t
 cc1.exe: all warnings being treated as errors
 Compilation failed
 ae19612
+ju.,  5 de ago. de 2021 19:20:08: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|6
+total_score: 0/70
+30bd984
