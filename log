@@ -1,0 +1,11 @@
+ju.,  5 de ago. de 2021 19:15:54: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function 'createNode':
+list.c:25:15: error: assignment discards 'const' qualifier from pointer target type [-Werror=discarded-qualifiers]
+     new->data = data;
+               ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+9e031e5

@@ -6,7 +6,7 @@
 typedef struct Node Node;
 
 struct Node {
-    const void * data;
+    void * data;
     Node * next;
     Node * prev;
 };
