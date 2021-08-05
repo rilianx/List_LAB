@@ -5,7 +5,7 @@
 
 typedef struct{
     int year;
-    char* title[30];
+    char title[30];
     char director[30];
 }Pelicula;
 
