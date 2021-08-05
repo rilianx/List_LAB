@@ -75,6 +75,16 @@ List* initialize_exList(){
     return L;
 }
 
+List* initialize_emptyList(){
+     info_msg("Creando Lista vacia (head=NULL)");
+     List * L = (List *)malloc(sizeof(List));
+
+     L->current=NULL;
+     L->head=L->tail=NULL;
+
+    return L;
+}
+
 int test_create(){
     List* L = createList();
     if(L==NULL){
@@ -111,7 +121,18 @@ int test_first_next(){
         err_msg("current debería apuntar al primer nodo");
         return 0;
     }
+
+    L=initialize_emptyList();
+    info_msg("llamando a firstList");
+    j = firstList(L);
+    if(j != NULL){
+        err_msg("firstList deberia retornar NULL");
+        return 0;
+    }
+
     ok_msg("firstList");
+
+    L=initialize_exList();
 
     info_msg("llamando a nextList");
     j = nextList(L);
