@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
-#include "list_answer2.c"
+#include "list.c"
 
 
 char * _strdup(const char * str) {
