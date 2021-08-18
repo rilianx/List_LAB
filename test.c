@@ -60,7 +60,7 @@ List* initialize_exList(){
      int *j = (int*) malloc(sizeof(int));
      *j=0;
      L->head=L->tail=createNode(j);
-     info_msg("L->current = L->head");
+     info_msg("llamando a firstList");
      L->current=L->head;
 
     int i; Node*n;
