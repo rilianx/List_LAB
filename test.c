@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
-#include "list.c"
+#include "list_answer2.c"
 
 
 char * _strdup(const char * str) {
@@ -59,8 +59,9 @@ List* initialize_exList(){
      List * L = (List *)malloc(sizeof(List));
      int *j = (int*) malloc(sizeof(int));
      *j=0;
-     L->current=NULL;
      L->head=L->tail=createNode(j);
+     info_msg("L->current = L->head");
+     L->current=L->head;
 
     int i; Node*n;
      for(i=1;i<10;i++){
