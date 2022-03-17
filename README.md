@@ -6,11 +6,12 @@ Implementando una Lista
 ---
 **Antes de comenzar**
 
-* Abra el Visual Studio Code y abra una nueva ventana
-* En el explorador ponga la opción para clonar repositorio y clone **este repositorio**
+* Abra su cuenta en repl.it (si no tiene cree una a través de su cuenta en github)
+* En el home de repl.it busque el lab y clónelo para comenzar a trabajar
+* Seleccione el lenguaje (C) y escriba el comando para el botón run: `bash test.sh`
 * Sólo puede modificar los archivos `list.c` y `main.c`
-* Para testear sus códigos debe abrir un terminal *git bash* y ejecutar el comando `./test.sh`
-* Verifique que sus cambios se hayan subido al repositorio en github
+* Para testear sus códigos basta con que apriete el botón **Run**
+* Actualice seguido sus cambios, debe ingresar su contraseña de github y [token](https://drive.google.com/file/d/1s3PyI_HCn0HAx5dm7h0jRiC-G9Cq2p-g/view?usp=sharing)
 * No está permitido usar comandos de git (a menos que el profesor lo indique)
 
 ---
