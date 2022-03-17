@@ -36,7 +36,7 @@ typedef struct {
 } List;
 ````
 
-Si tiene dudas o no sabe como funciona una lista enlazada, puede ver [esta presentación](https://docs.google.com/presentation/d/1ywdRlclnyEt5j02rHXF1nC_3oF0RJcuz2U12qPuv5N4/edit), revisar [este libro](https://drive.google.com/file/d/0B9JSHx01XN1rRGwyTHowaEJnLUE/view?usp=sharing), buscar en internet o preguntar.
+Si tiene dudas o no sabe como funciona una lista enlazada, puede ver [esta presentación](https://docs.google.com/presentation/d/1ywdRlclnyEt5j02rHXF1nC_3oF0RJcuz2U12qPuv5N4/edit), revisar [este libro](https://edutechlearners.com/download/Introduction_to_algorithms-3rd%20Edition.pdf), buscar en internet o preguntar.
 
 Ejercicios
 ----
